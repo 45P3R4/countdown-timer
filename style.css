@@ -3,6 +3,8 @@
     font-family: sans-serif;
     background-color: #222638;
     color: #FFFFFF;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 :root {
@@ -44,6 +46,7 @@ h3 {
 
 .timer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -54,3 +57,22 @@ h3 {
     align-items: center;
 }
 
+@media only screen and (max-width: 600px) {
+    
+    .timer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .timer__time:last-child h2 {
+        padding-right: var(--space-between-symbols);
+    }
+    
+    .timer__time:not(:last-child) h2::after {
+        padding-left: var(--space-between-symbols);
+        content: "";
+    }
+    
+}
