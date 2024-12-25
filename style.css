@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #222638;
+    color: #FFFFFF;
+}
+
+:root {
+    --space-between-symbols: 40px;
+}
+
+canvas {
+    background-color: transparent;
+}
+
+h2 {
+    font-size: 3rem;
+    padding-left: var(--space-between-symbols);
+}
+
+.timer__time:last-child h2 {
+    padding-right: var(--space-between-symbols);
+}
+
+.timer__time:not(:last-child) h2::after {
+    padding-left: var(--space-between-symbols);
+    content: ":";
+}
+
+h3 {
+    font-size: 0.8em;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.timer__time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
