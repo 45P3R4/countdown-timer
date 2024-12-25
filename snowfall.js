@@ -1,7 +1,7 @@
-const NUMBER_OF_SNOWFLAKES = 300;
-const MAX_SNOWFLAKE_SIZE = 5;
+const NUMBER_OF_SNOWFLAKES = 150;
+const MAX_SNOWFLAKE_SIZE = 3;
 const MAX_SNOWFLAKE_SPEED = 2;
-const SNOWFLAKE_COLOUR = '#ddd';
+const SNOWFLAKE_COLOUR = '#DDDDDD';
 
 const snowflakes = [];
 
