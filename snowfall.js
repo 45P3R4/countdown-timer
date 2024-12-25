@@ -56,3 +56,10 @@ for (let i = 0; i < NUMBER_OF_SNOWFLAKES; i++) {
 }
 
 animate();
+
+window.addEventListener('resize', resizeCanvas, false);
+
+function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
